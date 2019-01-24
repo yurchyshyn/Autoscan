@@ -155,7 +155,7 @@ button::-moz-focus-inner {
   width: 100%; }
 
 .mfp-counter {
-  display: none;
+  /*display: none;*/
 }
 
 .mfp-arrow {
