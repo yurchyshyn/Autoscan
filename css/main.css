@@ -294,12 +294,21 @@ header{
 .catalog-goods-item-version{
     margin-top: 1.4rem;
 }
-.catalog-goods-item-slider div{
-    margin: 5px 0;
-}
 .catalog-goods-item-slider{
     width: 16rem;
     margin: 0 auto;
+}
+.catalog-goods-item-slider a{
+    margin: 5px 0;
+    position: relative;
+}
+.catalog-goods-item-slider .zoom{
+    width: 20px;
+    cursor: pointer;
+    margin-top: -20px;
+    position: absolute;
+    right: 0;
+    bottom:0;
 }
 .catalog-goods-item-slider:hover{
     cursor: pointer;
