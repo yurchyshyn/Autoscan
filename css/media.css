@@ -7,10 +7,10 @@
     }
 }
 @media screen and (max-width: 925px){
-    .main-left-logo{
+    .main-logo{
         width: 30rem;
     }
-    .main-left-opportunities{
+    .main-opportunities{
         line-height: 1.9;
         font-size: 1.4rem;
     }
@@ -79,10 +79,10 @@
     .main-center{
         margin-top: 1.4rem;
     }
-    .main-left-opportunities{
+    .main-opportunities{
         margin-top: 2rem;
     }
-    .main-left-read{
+    .main-read{
         margin-top: 4.2rem;
     }
     .contacts-blocks{
@@ -137,8 +137,8 @@
     }
 }
 @media screen and (max-width: 640px){
-    .main-left-opportunities,
-    .main-left-read{
+    .main-opportunities,
+    .main-read{
         display: none;
     }
     .main .wrapper{
@@ -194,5 +194,8 @@
     }
     .contacts-blocks-info-time p{
         width: 50%;
+    }
+    .about_scanners .title{
+        font-size: 3.9rem;
     }
 }
