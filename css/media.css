@@ -3,7 +3,7 @@
         font-size: 9px;
     }
     .wrapper{
-        width: 90%;
+        width: 92%;
     }
 }
 @media screen and (max-width: 925px){
@@ -73,6 +73,26 @@
         right: 5%;
         z-index: 9999;
     }
+    .main-right-phones{
+        display: flex;
+        width: 100px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .phone_number{
+        display: none;
+    }
+    .main-right-phones a{
+        width: 5rem;
+    }
+    .phone_logo{
+        width: 4.5rem;
+        display: block;
+    }
+    .phone_logo-vodafone{
+        width: 4.7rem;
+        margin-top: 2px;
+    }
     .main-right-subtext{
         display: none;
     }
@@ -116,7 +136,7 @@
     .footer-contacts{
         margin-bottom: 1rem;
     }
-    .footer-contacts .main-right-phones{
+    .footer-phones{
         font-size: 2rem;
     }
     .footer-socials-line1,
@@ -179,6 +199,22 @@
     .slick-next{
         right: -4rem;
     }
+    .shipping .wrapper{
+        width: 80%;
+    }
+    .methods{
+        flex-direction: column;
+        align-items: center;
+    }
+    .methods ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .methods ul:first-child{
+        margin-left: -20px;
+        margin-bottom: 2rem;
+
+    }
 @media screen and (max-width: 410px){
     .contacts-blocks-info,
     .contacts-blocks-form{
@@ -195,7 +231,7 @@
     .contacts-blocks-info-time p{
         width: 50%;
     }
-    .about_scanners .title{
+    .main_section .title{
         font-size: 3.9rem;
     }
 }

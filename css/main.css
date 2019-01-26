@@ -139,6 +139,9 @@ header{
     font-size: 1.4rem;
     line-height: 2.4rem;
 }
+.main-left{
+
+}
 .main-opportunities{
     margin-top: 5rem;
     font-size: 1.8rem;
@@ -147,6 +150,15 @@ header{
 }
 .main-opportunities li:first-child{
     font-weight: 700;
+}
+.main-opportunities li{
+    display: flex;
+    align-items: center;
+}
+.main-opportunities li div{
+    width: 2rem;
+    margin-right: 5px;
+    line-height: 1.2rem;
 }
 .main-read{
     margin-top: 5.2rem;
@@ -239,6 +251,10 @@ header{
     font-size: 1.4rem;
     line-height: 1.143;
 }
+.phone_logo{
+    display: none;
+}
+
 
 /*Catalog*/
 .catalog{
@@ -516,15 +532,15 @@ footer{
 .footer-contacts{
     text-align: right;
 }
-.footer-contacts .main-right-phones{
+.footer-phones{
     font-size: 1.4rem;
     line-height: 1.286;
 }
-.footer-contacts .main-right-phones a:nth-child(2){
-    margin-top: 3px;
-}
-.footer-contacts .main-right-phones a:hover{
+.footer-phones a:hover{
     opacity: 0.7;
+}
+.footer-phones a:nth-child(2){
+    margin: 5px 0;
 }
 .footer-contacts .main-right-subtext,
 .footer-logo .main-left-subtext{
@@ -555,21 +571,21 @@ footer{
 
 
 /*about_scannners.html*/
-.about_scanners{
+.main_section{
     background-color: #dce0e8;
     padding-top: 5.5rem;
 }
-.about_scanners .wrapper{
+.main_section .wrapper{
     position: relative;
     flex-direction: column;
-    align-items: center;
 }
-.about_scanners .title{
+.main_section .title{
     margin: 0 auto;
     text-transform: uppercase;
 }
 .title-red{
     margin-top: 1.5rem;
+    text-align: center;
     font-size: 3.6rem;
     color: #a80606;
 }
@@ -648,6 +664,53 @@ footer{
 .google-green{
     color:#34A853;
 }
-.about_scanners .main-button{
-    margin: 4rem 0;
+.main_section .main-button{
+    margin: 4rem auto;
+}
+
+
+/*shipping.html*/
+.shipping li{
+    font-size: 1.8rem;
+    line-height: 1.5;
+    text-align: left;
+    margin-bottom: 1.5rem;
+    list-style: disc;
+}
+.shipping .title{
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.shipping .link{
+    font-weight: 700;
+    text-decoration: underline;
+    display: inline-block;
+}
+.shipping .link:hover{
+    opacity: 0.7;
+}
+.shipping .link[href="index.html"]{
+    color: #a30303;
+}
+.shipping span{
+    font-weight: 700;
+}
+.shipping ul div{
+    width: 4rem;
+    margin-right: 5px;
+}
+.methods{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-around;
+}
+.methods ul li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.methods ul li:first-child{
+    font-size: 2rem;
+    font-weight: 700;
 }
