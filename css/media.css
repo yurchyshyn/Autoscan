@@ -215,6 +215,13 @@
         margin-bottom: 2rem;
 
     }
+    .modal-content{
+        width: 95%;
+    }
+    .modal-content button[type="submit"],
+    .modal-content .buyerDate{
+        width: 70%;
+    }
 @media screen and (max-width: 410px){
     .contacts-blocks-info,
     .contacts-blocks-form{

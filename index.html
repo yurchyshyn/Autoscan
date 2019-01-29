@@ -52,7 +52,7 @@
 					<li><div class=""><img src="img/check-mark.svg" alt="видалення помилок з пам’яті ЕБУ (стерає СНЕСК)"></div>видалення помилок з пам’яті ЕБУ (стерає СНЕСК)</li>
 					<li><div class=""><img src="img/check-mark.svg" alt="перегляд значень датчиків у реальному часі"></div>перегляд значень датчиків у реальному часі</li>
 				</ul>
-				<a class="main-read" href="about_scanners.html" title="Дізнатись більше про автомобільні діагностичні сканери" alt="Дізнатись більше про автомобільні діагностичні сканери">
+				<a class="main-read" href="about_scanners.html" target="_blank" title="Дізнатись більше про автомобільні діагностичні сканери" alt="Дізнатись більше про автомобільні діагностичні сканери">
 					<span>Читати далі</span>
 					<div><img src="img/right-arrow.svg" alt="Дізнатись більше про автомобільні діагностичні сканери"></div>
 				</a>
@@ -383,10 +383,10 @@
 				</div>
 				<div class="contacts-blocks-form">
 					<p class="contacts-blocks-title">Напишіть нам</p>
-					<form action="#" name="massege">
+					<form action="#" name="messege">
 						<input type="text" required placeholder="Ім'я" maxlength="20" name="userName">
 						<input type="email" required placeholder="E-mail" maxlength="25" name="userEmail">
-						<textarea name="userMessege" id="massege" placeholder="Якщо у Вас виникли питання, ми обов'язково з Вами зв'яжемось"></textarea>
+						<textarea name="userMessege" id="messege" placeholder="Якщо у Вас виникли питання, ми обов'язково з Вами зв'яжемось"></textarea>
 						<button type="submit">Відправити</button>
 					</form>
 				</div>
@@ -434,6 +434,23 @@
 			</div>
 		</div>
 	</footer>
+
+	<!-- Modal windows -->
+	<div class="overlay">
+		<div class="modal-content">
+			<button class="modal-content-close">&times</button>
+			<p class="modal-content-title">Оформлення замовлення</p>
+			<form action="#" name="order">
+				<input class="buyerDate" id="buyerName" type="text" required placeholder="Ім'я" maxlength="20" name="buyerName">
+				<input class="buyerDate" id="buyerTel" type="number" required placeholder="Номер телефону" maxlength="13" name="buyerTel">
+				<div>
+					<label for="numberOfScanners">Кількість</label>
+					<input id="numberOfScanners" type="number" value="1" min="1" max="10" name="numberOfScanners">
+				</div>
+				<button type="submit">Відправити</button>
+			</form>
+		</div>
+	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>
