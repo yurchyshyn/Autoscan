@@ -220,7 +220,7 @@
     }
     .modal-content button[type="submit"],
     .modal-content .buyerDate{
-        width: 70%;
+        width: 85%;
     }
 @media screen and (max-width: 410px){
     .contacts-blocks-info,
