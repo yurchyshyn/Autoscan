@@ -12,6 +12,8 @@
 	 <link rel="stylesheet" href="css/slick-theme.css"/>
 	 <!-- Magnific Popup -->
 	 <link rel="stylesheet" href="css/magnific-popup.css">
+	 <!-- jqCart -->
+	 <link rel="stylesheet" href="css/jqcart.css">
 	 <!-- Main CSS -->
 	 <link rel="stylesheet" href="css/main.css">
 	 <!-- Media CSS -->
@@ -61,7 +63,7 @@
 				<h1 class="main-center-title">Універсальні автосканери <strong>ELM327 OBD2</strong></h1>
 				<div class="main-center-img"><img src="img/main-image.png" alt="ELM327 OBD2"></div>
 				<div class="main-center-subtext">Діагностуй своє авто безкоштовно!</div>
-				<a href="#" class="main-button" alt="Замовити автосканер" title="Замовити автосканер">
+				<a href="#" id="order" class="main-button" alt="Замовити автосканер" title="Замовити автосканер">
 					<span>Замовити</span>
 					<div><img src="img/shopping-cart.svg" alt="Замовити автосканер"></div>
 				</a>
@@ -119,7 +121,7 @@
 					<p class="catalog-goods-item-availability">
 						В наявності
 					</p>
-					<a href="#" class="main-button" alt="Купити автосканер" title="Купити автосканер">
+					<a href="#" class="main-button add-to-cart" alt="Купити автосканер" title="Купити автосканер" data-id="1" data-title="1.5 версія Bluetooth" data-price="300" data-img="img/elm327.jpg">
 						<span>Купити</span>
 						<div><img src="img/shopping-cart.svg" alt="Купити автосканер"></div>
 					</a>
@@ -439,6 +441,17 @@
 	<div class="overlay">
 		<div class="modal-content">
 			<button class="modal-content-close">&times</button>
+			<p class="modal-content-title">Допомога у виборі сканера</p>
+			<form action="#" name="order">
+				<input class="buyerDate" id="buyerName" type="text" required placeholder="Ім'я" maxlength="20" name="user_name">
+				<input class="buyerDate" id="buyerTel" type="number" required placeholder="Номер телефону" maxlength="13" name="user_phone">
+				<button type="submit">Допомогти вибрати</button>
+			</form>
+		</div>
+	</div>	
+	<!-- <div class="overlay">
+		<div class="modal-content">
+			<button class="modal-content-close">&times</button>
 			<p class="modal-content-title">Оформлення замовлення</p>
 			<form action="#" name="order">
 				<input class="buyerDate" id="buyerName" type="text" required placeholder="Ім'я" maxlength="20" name="buyerName">
@@ -450,10 +463,11 @@
 				<button type="submit">Відправити</button>
 			</form>
 		</div>
-	</div>
+	</div> -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/jqcart.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

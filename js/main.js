@@ -20,7 +20,7 @@ $(document).ready(function(){
     },
   });
   // modal windows
-  $('.main-button').on('click', function() {
+  $('#order').on('click', function() {
       $('.overlay').fadeIn('slow/400/fast', function() {
       });
   })
@@ -31,3 +31,19 @@ $(document).ready(function(){
       if (e.target == this) $(".overlay").fadeOut('fast');
   })
 })
+// jqCart
+$(function() {
+    'use strict';
+    // инициализация плагина
+    $.jqCart({
+        buttons: '.add-to-cart',        // селектор кнопок, аля "Добавить в корзину"
+        handler: '/php/handler.php', // путь к обработчику
+        visibleLabel: false,         // показывать/скрывать ярлык при пустой корзине (по умолчанию: false)
+        openByAdding: true,         // автоматически открывать корзину при добавлении товара (по умолчанию: false)
+        currency: 'грн',          // валюта: строковое значение, мнемоники (по умолчанию "$")
+    });
+    
+    // дополнительные методы
+    $.jqCart('openCart'); // открыть корзину
+    $.jqCart('clearCart'); // очистить корзину
+});

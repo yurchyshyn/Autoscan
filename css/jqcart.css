@@ -1,0 +1,196 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+/* ------------- Стили для корзины ------------- */
+/* Модальное окно */
+.jqcart-layout {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 998;
+}
+.jqcart-layout:before {
+    content:'';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.36em;
+}
+.jqcart-checkout {
+    font-family: Tahoma, sans-serif;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    width: 80%;
+    padding: 3rem;
+    vertical-align: middle;
+    border-radius: 4px;
+    border:2px solid #f5b029;
+    background-color:  #fff;
+    box-shadow: 0 0 7px 5px rgba(0, 0, 0, .3);
+}
+/* Таблица с заказанными товарами */
+.jqcart-cart-title {
+	position: relative;
+    margin-bottom: 1rem;
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-align: left;
+    color: #97aedc;
+}
+.jqcart-manage-order {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+}
+.jqcart-manage-order > div {
+    display: table-row;
+}
+.jqcart-manage-order .jqcart-row-group {
+    display: table-row-group;
+}
+.jqcart-manage-order > div > div {
+    display: table-cell;
+    padding: 5px;
+    border: 1px solid #f5b029;
+    vertical-align: middle;
+}
+.jqcart-manage-order > div > div input {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    padding: 4px;
+    text-align: center;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    margin-top: -5px;
+    vertical-align: middle;
+}
+.jqcart-manage-order .jqcart-small-td {
+  width: 7%;
+}
+.jqcart-manage-order .jqcart-item-img img {
+  max-width: 64px;
+  max-height: 64px;
+}
+.jqcart-thead {
+    font-weight: bold;
+}
+.jqcart-thead div {
+    text-align: center;
+}
+.jqcart-subtotal {
+    margin: 1.5rem 0;
+    font-size: 1.2em;
+    text-align: right;
+}
+.jqcart-incr {
+    display: inline-block;
+    font-size: 1.5em;
+    padding: 10px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/* Кнопка удаления отдельного товара из корзины */
+.jqcart-del-item {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    background-image: url(../img/No_Crosssvg.svg);
+    background-size: cover;
+    color: #FFF;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.jqcart-del-item:hover {
+    opacity: 0.7;
+    
+}
+/* Форма для заказчика */
+.jqcart-orderform {
+    text-align: left;
+}
+.jqcart-orderform::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+.jqcart-orderform p {
+    margin: 0 0 10px 0;
+}
+.jqcart-orderform label {
+    position: relative;
+    display: inline-block;
+    min-width: 100px;
+    vertical-align: middle;
+    overflow: hidden;
+}
+.jqcart-orderform p:nth-child(5) label {
+    vertical-align: top;
+}
+.jqcart-orderform label::after {
+    position: absolute;
+    bottom: 0;
+    content: '';
+    width: 100%;
+    border-bottom: 1px dotted #f5b029;
+}
+.jqcart-orderform p:last-child {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px dashed #CCC; 
+}
+.jqcart-orderform input[type=text],
+.jqcart-orderform textarea {
+    font-family: Tahoma, sans-serif;
+    font-size: 16px;
+    width: 100%;
+    max-width: 250px;
+    padding: 5px;
+    border-radius: 4px;
+    border:1px solid #f5b029;
+    background-color:  #fff;
+    resize: none;
+}
+.jqcart-orderform input[type=submit],
+.jqcart-orderform input[type=reset] {
+    color: #f5b029;
+    width: 100%;
+    max-width: 250px;
+    border-radius: 4px;
+    border:1px solid #f5b029;
+    background-color:  #fff;
+    padding: 10px;
+    font-size: 2rem;
+    transition: 0.2s;
+}
+.jqcart-orderform input[type=submit]:hover,
+.jqcart-orderform input[type=reset]:hover{
+    border:1px solid #f5b029;
+    background-color:  #f5b029;
+    color:#fff;
+    cursor: pointer;
+}
+.jqcart-orderform input[type=submit]:hover{
+    border:1px solid #0e8b01;
+    background-color: #0e8b01;
+}
+.jqcart-orderform input[type=reset] {
+    float: right;
+}
+.jqcart-error {
+    color: #f00;
+}
