@@ -15,7 +15,7 @@
     visibleLabel = false,
     label = $('<div class="jqcart-cart-label"><span class="jqcart-total-cnt">0</span></div>'),
     modal = '<div class="jqcart-layout"><div class="jqcart-checkout">123</div></div>',
-    orderform = '<p class="jqcart-cart-title">Контактні дані:</p><form class="jqcart-orderform"><p><label>Ім`я</label><input type="text" maxlength="20" required name="user_name"></p><p><label>Телефон:</label><input type="text" maxlength="13" required name="user_phone"></p><p><label>Коментар:</label><textarea name="user_comment"></textarea></p><p><input type="submit" value="Підтвердити замовлення"><input type="reset" value="Повернутись за покупками"></p></form>';
+    orderform = '<p class="jqcart-cart-title">Контактні дані:</p><form class="jqcart-orderform"><p><label>Ім`я</label><input placeholder="Ваше Ім`я" type="text" maxlength="20" required name="user_name"></p><p><label>Телефон:</label><input placeholder="Номер телефону" type="text" maxlength="13" required name="user_phone"></p><p><input type="submit" value="Підтвердити"><input type="reset" value="Назад"></p></form>';
   var opts = {
 		buttons: '.add_item',
 		cartLabel: 'body',
@@ -142,7 +142,7 @@
       var subtotal = 0,
 			cartHtml = '';
       cartData = actions.getStorage();
-      orderPreview = '<p class="jqcart-cart-title">Корзина</p><div class="jqcart-table-wrapper"><div class="jqcart-manage-order"><div class="jqcart-thead"><div>№</div><div></div><div>Версія, тип підключення</div><div>Ціна</div><div>Кіл-сть</div><div>Сума</div><div></div></div>';
+      orderPreview = '<p class="jqcart-cart-title">Корзина</p><div class="jqcart-table-wrapper"><div class="jqcart-manage-order"><div class="jqcart-thead"><div></div></div>';
       var key, sum = 0;
       for (key in cartData) {
         if (cartData.hasOwnProperty(key)) {
@@ -161,7 +161,7 @@
         }
       }
       orderPreview += '</div></div>';
-      orderPreview += '<div class="jqcart-subtotal">Загально: <strong>' + subtotal + '</strong> ' + opts.currency + '</div>';
+      orderPreview += '<div class="jqcart-subtotal">Загальна сума: <strong>' + subtotal + '</strong> ' + opts.currency + '</div>';
 			
 			cartHtml = subtotal ? (orderPreview + orderform) : '<h2 class="jqcart-empty-cart">Корзина порожня</h2>';
       $(modal).appendTo('body').find('.jqcart-checkout').html(cartHtml);

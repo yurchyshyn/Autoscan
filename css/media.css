@@ -155,22 +155,6 @@
     .footer-socials-copy{
         margin-top: 1rem;
     }
-    .jqcart-tr div:nth-child(2n),
-    .jqcart-thead div:nth-child(2n){
-        display: none;
-    }
-    .jqcart-orderform input[type=submit],
-    .jqcart-orderform input[type=reset]{
-        display: block;
-        float: none;
-        margin: 0 auto;
-        margin-top: 20px;
-        font-size: 1.7rem;
-    }
-    .jqcart-checkout{
-        width: 90%;
-        text-align: center;
-    }
     .jqcart-cart-title,
     .jqcart-subtotal{
         text-align: center;
@@ -182,19 +166,22 @@
         text-align: center;
     }
     .jqcart-orderform label{
-        position: absolute;
-        z-index: 10;
-        background-color: #fff;
-        padding: 0;
-        min-width: 0px;
-        padding:2px;
-        margin-left: 4px;
-        text-align: left;
-        /*left: 5px;*/
-        transform: translateY(-50%);
+        display: none;
     }
     .jqcart-orderform label:after{
         display: none;
+    }
+    .jqcart-orderform input[type=submit],
+    .jqcart-orderform input[type=reset]{
+        display: block;
+        float: none;
+        margin: 0 auto;
+        margin-top: 20px;
+        max-width: 300px;
+    }
+    .jqcart-manage-order .jqcart-item-img img {
+      max-width: 64px;
+      max-height: 64px;
     }
 }
 @media screen and (max-width: 640px){
@@ -262,6 +249,11 @@
     .modal-content button[type="submit"],
     .modal-content .buyerDate{
         width: 85%;
+    }
+    .jqcart-checkout{
+        width: 98%;
+        padding: 1rem;
+        text-align: center;
     }
 @media screen and (max-width: 410px){
     .contacts-blocks-info,

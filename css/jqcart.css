@@ -25,12 +25,12 @@
 .jqcart-checkout {
     font-family: Tahoma, sans-serif;
     position: absolute;
-    top: 55%;
+    top: 52%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: inline-block;
-    width: 80%;
-    padding: 3rem;
+    width: 60%;
+    padding: 2rem;
     vertical-align: middle;
     border-radius: 4px;
     border:2px solid #f5b029;
@@ -49,6 +49,8 @@
 .jqcart-manage-order {
     display: table;
     width: 100%;
+    max-width: 550px;
+    margin: 0 auto;
     border-collapse: collapse;
 }
 .jqcart-manage-order > div {
@@ -59,33 +61,26 @@
 }
 .jqcart-manage-order > div > div {
     display: table-cell;
-    padding: 5px;
-    border: 1px solid #f5b029;
     vertical-align: middle;
 }
 .jqcart-manage-order > div > div input {
     display: inline-block;
     width: 24px;
-    height: 24px;
-    padding: 4px;
+    font-size: 1.8rem;
     text-align: center;
-    border: 1px solid #CCC;
-    border-radius: 5px;
-    margin-top: -5px;
-    vertical-align: middle;
+    border: none;
 }
-.jqcart-manage-order .jqcart-small-td {
-  width: 7%;
+.jqcart-manage-order > div > div:nth-child(3){
+    width: 20%;
 }
 .jqcart-manage-order .jqcart-item-img img {
-  max-width: 64px;
-  max-height: 64px;
+  max-width: 80px;
+  max-height: 80px;
 }
-.jqcart-thead {
-    font-weight: bold;
-}
-.jqcart-thead div {
-    text-align: center;
+.jqcart-thead div:nth-child(1),
+.jqcart-tr div:nth-child(1),
+.jqcart-tr div:nth-child(4){
+    display: none;
 }
 .jqcart-subtotal {
     margin: 1.5rem 0;
@@ -95,7 +90,7 @@
 .jqcart-incr {
     display: inline-block;
     font-size: 1.5em;
-    padding: 10px;
+    padding: 5px;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -111,7 +106,6 @@
     background-image: url(../img/No_Crosssvg.svg);
     background-size: cover;
     color: #FFF;
-    border-radius: 50%;
     cursor: pointer;
     transition: 0.2s;
 }
@@ -128,18 +122,12 @@
     content: '';
     clear: both;
 }
-.jqcart-orderform p {
-    margin: 0 0 10px 0;
-}
 .jqcart-orderform label {
     position: relative;
     display: inline-block;
-    min-width: 100px;
-    vertical-align: middle;
+    min-width: 90px;
+    bottom: -10px;
     overflow: hidden;
-}
-.jqcart-orderform p:nth-child(5) label {
-    vertical-align: top;
 }
 .jqcart-orderform label::after {
     position: absolute;
@@ -151,41 +139,54 @@
 .jqcart-orderform p:last-child {
     margin-top: 10px;
     padding-top: 10px;
-    border-top: 1px dashed #CCC; 
 }
-.jqcart-orderform input[type=text],
-.jqcart-orderform textarea {
+.jqcart-orderform input[type=text] {
     font-family: Tahoma, sans-serif;
     font-size: 16px;
     width: 100%;
-    max-width: 250px;
-    padding: 5px;
+    max-width: 300px;
+    padding: 1rem;
     border-radius: 4px;
     border:1px solid #f5b029;
     background-color:  #fff;
-    resize: none;
+    margin-bottom: 2rem;
+}
+.jqcart-orderform input[type=text]:last-child{
+    /*margin-bottom: 0;*/
+}
+.jqcart-orderform input[type=text]:focus{
+    outline: none;
+    background-color: rgba(255, 138, 0, 0.1);
 }
 .jqcart-orderform input[type=submit],
 .jqcart-orderform input[type=reset] {
     color: #f5b029;
     width: 100%;
-    max-width: 250px;
+    max-width: 200px;
     border-radius: 4px;
-    border:1px solid #f5b029;
+    border:2px solid #f5b029;
     background-color:  #fff;
     padding: 10px;
-    font-size: 2rem;
+    font-size: 1.8rem;
     transition: 0.2s;
+}
+.jqcart-orderform p:nth-child(3){
+    margin-top: 0;
+    padding-top: 0;
 }
 .jqcart-orderform input[type=submit]:hover,
 .jqcart-orderform input[type=reset]:hover{
-    border:1px solid #f5b029;
+    border:2px solid #f5b029;
     background-color:  #f5b029;
     color:#fff;
     cursor: pointer;
 }
+.jqcart-orderform input[type=submit]:active,
+.jqcart-orderform input[type=reset]:active{
+    outline: none;
+}
 .jqcart-orderform input[type=submit]:hover{
-    border:1px solid #0e8b01;
+    border:2px solid #0e8b01;
     background-color: #0e8b01;
 }
 .jqcart-orderform input[type=reset] {

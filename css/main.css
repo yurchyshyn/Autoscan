@@ -787,6 +787,10 @@ footer{
     padding: 1.5rem;
     font-size: 2.4rem;
 }
+.modal-content .buyerDate:focus{
+    outline: none;
+    background-color: rgba(255, 138, 0, 0.1);
+}
 #numberOfScanners{
     margin-top: 3rem;
     margin:0 auto;
