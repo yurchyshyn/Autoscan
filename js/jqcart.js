@@ -142,7 +142,7 @@
       var subtotal = 0,
 			cartHtml = '';
       cartData = actions.getStorage();
-      orderPreview = '<p class="jqcart-cart-title">Корзина</p><div class="jqcart-table-wrapper"><div class="jqcart-manage-order"><div class="jqcart-thead"><div></div></div>';
+      orderPreview = '<p class="jqcart-cart-title">Оформлення замовлення</p><div class="jqcart-table-wrapper"><div class="jqcart-manage-order"><div class="jqcart-thead"><div></div></div>';
       var key, sum = 0;
       for (key in cartData) {
         if (cartData.hasOwnProperty(key)) {
@@ -154,7 +154,7 @@
 					orderPreview += '<div class="jqcart-small-td jqcart-item-img"><img src="' + cartData[key].img + '" alt=""></div>';
           orderPreview += '<div>' + cartData[key].title + '</div>';
           orderPreview += '<div class="jqcart-price">' + cartData[key].price + '</div>';
-          orderPreview += '<div><span class="jqcart-incr" data-incr="-1">&#8211;</span><input type="text" maxlength="10" class="jqcart-amount" value="' + cartData[key].count + '"><span class="jqcart-incr" data-incr="1">+</span></div>';
+          orderPreview += '<div><span class="jqcart-incr" data-incr="-1">&#8211;</span><input type="text" readonly class="jqcart-amount" value="' + cartData[key].count + '"><span class="jqcart-incr" data-incr="1">+</span></div>';
           orderPreview += '<div class="jqcart-sum">' + sum + ' ' + opts.currency + '</div>';
 					orderPreview += '<div class="jqcart-small-td"><span class="jqcart-del-item"></span></div>';
           orderPreview += '</div>';

@@ -151,8 +151,8 @@
     background-color:  #fff;
     margin-bottom: 2rem;
 }
-.jqcart-orderform input[type=text]:last-child{
-    /*margin-bottom: 0;*/
+.jqcart-amount:focus{
+    outline: none;
 }
 .jqcart-orderform input[type=text]:focus{
     outline: none;
