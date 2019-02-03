@@ -90,7 +90,12 @@
 .jqcart-incr {
     display: inline-block;
     font-size: 1.5em;
-    padding: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    opacity: 0.7;
+    background-color: #ccc;
+    border-radius: 50%;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
