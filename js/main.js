@@ -20,7 +20,7 @@ $(document).ready(function(){
     },
   });
   // modal windows
-  $('#order').on('click', function() {
+  $('.btn-order').on('click', function() {
       $('.overlay').fadeIn('slow/400/fast', function() {
       });
   })

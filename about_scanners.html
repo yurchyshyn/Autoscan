@@ -142,7 +142,7 @@
                     <p>Сканер <span class="elm327">ELM327</span> потрібний кожному автовласнику, або ж людині яка планує ним стати. Ви можете використовувати його для діагностики під час вибору свого майбутнього авто на ринку вживаних автомобілів.</p>
                     <p>Отож, компактний і недорогий сканер <span class="elm327">ELM327</span>, для якого завжди знайдеться декілька квадратних сантиметрів у "бардачку", стане вірним другом вашого автомобіля і буде інформувати Вас про здоров'я вашого "залізного коня".</p>
                 </div>
-                <a href="#" class="main-button" alt="Замовити автосканер" title="Замовити автосканер">
+                <a href="#" class="btn-order main-button" alt="Замовити автосканер" title="Замовити автосканер">
                     <span>Замовити</span>
                     <div><img src="img/shopping-cart.svg" alt="Замовити автосканер"></div>
                 </a>
@@ -190,8 +190,35 @@
                 </div>
             </div>
         </footer>
+
+
+        <!-- Modal windows -->
+        <div class="overlay">
+            <div class="modal-content">
+                <button class="modal-content-close">&times</button>
+                <p class="modal-content-title">Допомога у виборі сканера</p>
+                <form action="#" name="order">
+                    <input class="buyerDate" id="buyerName" type="text" required placeholder="Ім'я" maxlength="20" name="user_name">
+                    <input class="buyerDate" id="buyerTel" type="number" required placeholder="Номер телефону" maxlength="13" name="user_phone">
+                    <button type="submit">Допомогти вибрати</button>
+                </form>
+            </div>
+        </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="js/jquery.magnific-popup.min.js"></script>
-        <script src="js/main.js"></script>
+        <script>
+            $(document).ready(function(){
+              // modal windows
+              $('.btn-order').on('click', function() {
+                  $('.overlay').fadeIn('slow/400/fast', function() {
+                  });
+              })
+              $('.modal-content-close').on('click', function(){
+                  $(".overlay").fadeOut('fast');
+              })
+              $(".overlay").on('click', function (e) {
+                  if (e.target == this) $(".overlay").fadeOut('fast');
+              })
+            })
+        </script>  
     </body>
 </html>
