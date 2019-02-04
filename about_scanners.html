@@ -6,16 +6,16 @@
      <meta name="keywords" content="">
      <meta name="description" content="">
      <!-- Reset CSS -->
-     <link rel="stylesheet" href="css/reset.css">
+     <link rel="stylesheet" href="/css/reset.css">
      <!-- Slider -->
-     <link rel="stylesheet" href="css/slick.css"/>
-     <link rel="stylesheet" href="css/slick-theme.css"/>
+     <link rel="stylesheet" href="/css/slick.css"/>
+     <link rel="stylesheet" href="/css/slick-theme.css"/>
      <!-- Magnific Popup -->
-     <link rel="stylesheet" href="css/magnific-popup.css">
+     <link rel="stylesheet" href="/css/magnific-popup.css">
      <!-- Main CSS -->
-     <link rel="stylesheet" href="css/main.css">
+     <link rel="stylesheet" href="/css/main.css">
      <!-- Media CSS -->
-     <link rel="stylesheet" href="css/media.css">
+     <link rel="stylesheet" href="/css/media.css">
     <title>Autoscan</title>
 </head>
     <body>
@@ -191,7 +191,6 @@
             </div>
         </footer>
 
-
         <!-- Modal windows -->
         <div class="overlay">
             <div class="modal-content">
@@ -204,21 +203,9 @@
                 </form>
             </div>
         </div>
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script>
-            $(document).ready(function(){
-              // modal windows
-              $('.btn-order').on('click', function() {
-                  $('.overlay').fadeIn('slow/400/fast', function() {
-                  });
-              })
-              $('.modal-content-close').on('click', function(){
-                  $(".overlay").fadeOut('fast');
-              })
-              $(".overlay").on('click', function (e) {
-                  if (e.target == this) $(".overlay").fadeOut('fast');
-              })
-            })
-        </script>  
+        <script src="/js/jqcart.js"></script>
+        <script src="/js/main.js"></script>
     </body>
 </html>
