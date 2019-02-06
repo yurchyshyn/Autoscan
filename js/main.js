@@ -12,12 +12,15 @@
   $('.btn-order').on('click', function() {
       $('.overlay').fadeIn('slow/400/fast', function() {
       });
+      $('body').addClass('no-scroll-body');
   });
   $('.modal-content-close').on('click', function(){
       $(".overlay").fadeOut('fast');
+      $('body').removeClass('no-scroll-body');
   });
   $(".overlay").on('click', function (e) {
       if (e.target == this) $(".overlay").fadeOut('fast');
+      $('body').removeClass('no-scroll-body');
   });
   // slider
   $('.catalog-goods-item-slider').slick({

@@ -25,6 +25,12 @@ div, a, span, ul, input, textarea{
     font-weight: 700;
     letter-spacing: 0.12rem;
 }
+.no-scroll-body{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+}
 /*Numbers off*/
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
@@ -283,6 +289,8 @@ header{
     opacity: 0.7;
 }
 .main-right-subtext{
+    margin-left: 2rem;
+    width: 90px;
     color:  #025893;
     font-size: 1.4rem;
     line-height: 1.143;
