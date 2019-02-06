@@ -1,4 +1,4 @@
-// $(document).ready(function(){
+$(document).ready(function(){
   // menu
   $('.menu-btn').on('click', function(){
       $('.menu').toggleClass('menu-active');
@@ -25,6 +25,7 @@
   // slider
   $('.catalog-goods-item-slider').slick({
   });
+});
 // jqCart
 $(function() {
     'use strict';
