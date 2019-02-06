@@ -142,7 +142,7 @@
       var subtotal = 0,
 			cartHtml = '';
       cartData = actions.getStorage();
-      orderPreview = '<p class="jqcart-cart-title">Оформлення замовлення</p><div class="jqcart-table-wrapper"><div class="jqcart-manage-order"><div class="jqcart-thead"><div></div></div>';
+      orderPreview = '<p class="jqcart-cart-title">Замовлення</p><div class="jqcart-table-wrapper"><div class="jqcart-manage-order"><div class="jqcart-thead"><div></div></div>';
       var key, sum = 0;
       for (key in cartData) {
         if (cartData.hasOwnProperty(key)) {

@@ -22,15 +22,6 @@
   // slider
   $('.catalog-goods-item-slider').slick({
   });
-  // magnific-popup
-  $('.catalog-goods-item-slider').magnificPopup({
-    delegate: 'a',
-    type: 'image',
-    gallery:{
-      enabled:true,
-    },
-  });
-// })
 // jqCart
 $(function() {
     'use strict';
