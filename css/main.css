@@ -786,6 +786,10 @@ footer{
     width: 35px;
     height: 35px;
     cursor: pointer;
+    transition: 0.2s;
+}
+.modal-content-close:hover{
+    background-color:#fab93c; 
 }
 .modal-content-close:focus{
     outline: none;
@@ -839,6 +843,7 @@ footer{
     transition:0.2s;
 }
 .modal-content button[type="submit"]:hover{
-    background-color: #eb9600;
-    color: #fff; 
+    border:2px solid #0e8b01;
+    background-color: #0e8b01;
+    color: #fff;
 }
