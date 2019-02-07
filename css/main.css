@@ -358,7 +358,7 @@ header{
     width: 16rem;
     margin: 0 auto;
 }
-.catalog-goods-item-slider a{
+.catalog-goods-item-slider div{
     margin: 5px 0;
     position: relative;
 }
@@ -369,9 +369,6 @@ header{
     position: absolute;
     right: 0;
     bottom:0;
-}
-.catalog-goods-item-slider:hover{
-    cursor: pointer;
 }
 .slick-active,
 .slick-current,

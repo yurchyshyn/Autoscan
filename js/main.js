@@ -25,6 +25,10 @@ $(document).ready(function(){
   // slider
   $('.catalog-goods-item-slider').slick({
   });
+  //zoom
+  $('.catalog-goods-item-slider > div').zoom({
+    // magnify:0.8
+  });
 });
 // jqCart
 $(function() {
