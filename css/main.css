@@ -364,6 +364,10 @@ header{
 .catalog-goods-item-version{
     margin-top: 1.4rem;
 }
+.catalog-goods-item-version-title{
+    margin-top: 2rem;
+    font-weight: bold;
+}
 .catalog-goods-item-slider{
     width: 16rem;
     margin: 0 auto;
