@@ -29,7 +29,7 @@ $(document).ready(function(){
   $('.catalog-goods-item-slider > div').zoom({
     magnify:0.8,
     on:'grab',
-    touch:'false'
+    touch:false
   });
 });
 // jqCart
