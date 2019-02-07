@@ -362,6 +362,9 @@ header{
     margin: 5px 0;
     position: relative;
 }
+.catalog-goods-item-slider > div{
+    cursor:grab;
+}
 .catalog-goods-item-slider .zoom{
     width: 20px;
     cursor: pointer;
