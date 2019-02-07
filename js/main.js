@@ -28,7 +28,8 @@ $(document).ready(function(){
   //zoom
   $('.catalog-goods-item-slider > div').zoom({
     magnify:0.8,
-    on:'grab'
+    on:'grab',
+    touch:'false'
   });
 });
 // jqCart
