@@ -105,6 +105,9 @@
     .main-read{
         margin-top: 4.2rem;
     }
+    .catalog-goods-item-cursor{
+        display: none;
+    }
     .contacts-blocks{
         flex-direction: column;
         align-items: center;

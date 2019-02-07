@@ -289,11 +289,21 @@ header{
     opacity: 0.7;
 }
 .main-right-subtext{
-    margin-left: 2rem;
-    width: 90px;
+    display: flex;
+    justify-content: right;
+    width: 11.5rem;
+    margin-left:1rem;
+}
+.main-right-subtext > div{
+    width: 5rem;
+    height: 5rem;
+    margin-top: 0.6rem;
+    margin-right: 2px;
+}
+.main-right-subtext p{
     color:  #025893;
+    line-height: 1.4;
     font-size: 1.4rem;
-    line-height: 1.143;
 }
 .phone_logo{
     display: none;
@@ -396,6 +406,14 @@ header{
 }
 .slick-next:before{
     transform: rotate(180deg);
+}
+.catalog-goods-item-cursor{
+    width: 170px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #ccc;
+    line-height: 15px;
 }
 .catalog-goods-item-price span:nth-child(2n + 1){
     font-size: 1.8rem;
@@ -513,15 +531,17 @@ header{
     width: 48.9%;
 }
 .contacts-blocks-form input{
-    display: block;
-    margin: 0 auto;
-    border-radius: 4px;
-    border: 1px solid #f5b029;
     background-color:  #fff;
     width: 84%;
-    font-size: 1.8rem;
-    padding: 1.5rem 2.3rem;
     margin-top: 2.5rem;
+    display: block;
+    margin:0 auto;
+    border-radius: 4px;
+    border:1px solid #f5b029;
+    height: 4.7rem;
+    margin-top: 3rem;
+    padding: 1.5rem;
+    font-size: 2.2rem;
 }
 .contacts-blocks-form textarea{
     word-spacing: -5px;
@@ -532,9 +552,13 @@ header{
     background-color:  #ffffff;
     width: 84%;
     height: 18.8rem;
-    font-size: 1.8rem;
-    padding: 1.6rem 2.2rem;
-    line-height: 1.667;
+    padding: 1.5rem;
+    font-size: 2.2rem;
+    line-height: 1.2;
+}
+.contacts-blocks-form input:focus,
+.contacts-blocks-form textarea:focus{
+    outline: none;
 }
 .contacts-blocks-form button{
     margin-top: 3rem;
