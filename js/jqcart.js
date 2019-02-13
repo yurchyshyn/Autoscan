@@ -21,7 +21,7 @@
 		cartLabel: 'body',
 		visibleLabel: false,
 		openByAdding: false,
-    handler: '/',
+    handler: '..',
 		currency: '$'
   };
   var actions = {
