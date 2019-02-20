@@ -26,7 +26,7 @@ $(document).ready(function(){
   $('.catalog-goods-item-slider').slick({
   });
   //zoom
-  $('.catalog-goods-item-slider > div').zoom({
+  $('.catalog-goods-item-slider-img').zoom({
     magnify:0.8,
     on:'grab',
     touch:false

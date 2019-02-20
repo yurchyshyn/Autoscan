@@ -1,6 +1,6 @@
 {
-    "name": "Autoscan",
-    "short_name": "Autoscan",
+    "name": "AutoScan",
+    "short_name": "AutoScan",
     "icons": [
         {
             "src": "android-chrome-192x192.png",

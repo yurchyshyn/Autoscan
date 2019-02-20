@@ -91,7 +91,7 @@ header{
 }
 .menu{
     display: flex;
-    width: 55%;
+    width: 90%;
     margin: 0 auto;
     justify-content: space-between;
     font-size: 1.8rem;
@@ -334,7 +334,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 8.8rem;
+    margin-top: 1rem;
 }
 .catalog-subtext p{
     letter-spacing: 0.04rem;
@@ -358,11 +358,21 @@ header{
 .catalog-goods-item-icon{
     width: 2rem;
     position: absolute;
-    right: 1.4rem;
-    top:1.4rem;
+    right: 1rem;
+    top:1rem;
+}
+.usb{
+    margin-top: 5px;
+    width: 3rem;
+    transform: rotate(-90deg);
+    right: 0.5rem;
+}
+.bmw{
+    opacity: 0;
 }
 .catalog-goods-item-version{
-    margin-top: 1.4rem;
+    margin-top: 10px;
+    font-size: 14px;
 }
 .catalog-goods-item-version-title{
     margin-top: 2rem;
@@ -588,7 +598,7 @@ footer{
     flex-direction: column;
     font-size: 1.4rem;
     line-height: 1.429;
-    width: 12rem;
+    width: 18rem;
 }
 .footer-menu .menu-item{
     transition: 0.2s;
