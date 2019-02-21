@@ -293,6 +293,7 @@ header{
     justify-content: right;
     width: 11.5rem;
     margin-left:1rem;
+    color:  #025893;
 }
 .main-right-subtext > div{
     width: 5rem;
@@ -697,7 +698,8 @@ footer{
 .answer-center{
    text-align: center; 
 }
-.answer li{
+.answer li,
+.answer p{
     margin-bottom: 2.5rem;
 }
 .answer li:last-child{
