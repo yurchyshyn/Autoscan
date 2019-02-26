@@ -202,25 +202,6 @@ header{
     margin-right: 5px;
     line-height: 1.2rem;
 }
-.main-read{
-    margin-top: 5.2rem;
-    display: flex;
-    align-items: center;
-    border-radius: 4px;
-    border:1px solid #006df0;
-    padding: 1rem;
-    width: 16.4rem;
-    color:  #006df0;
-    font-size: 1.6rem;
-}
-.main-read:hover{
-    background-color: #dce0e8;
-    border-color:#dce0e8;
-}
-.main-read div{
-    margin-left: 1.9rem;
-    width: 1.9rem;
-}
 .main-center{
     text-align: center;
     margin-top: 6rem;
@@ -262,9 +243,6 @@ header{
     height: 3.6rem;
     margin-top: 7px;
 }
-.main-button:hover{
-    background-color: #fab93c;
-}
 .main-button span{
     color:  #ffffff;
     font-size: 1.8rem;
@@ -274,6 +252,24 @@ header{
 }
 .main-button div{
     width: 1.6rem;
+}
+.main-button:hover{
+    background-color: #fab93c;
+}
+.main-read{
+    display: flex;
+    align-items: center;
+    background-color: #dce0e8;
+    border-color: transparent;
+}
+.main-read span{
+    color:  #006df0;
+}
+.main-read:hover{
+    opacity: 
+    border-color:#dce0e8;
+    background-color: #dce0e8;
+    opacity: 0.7;
 }
 .main-right{
     margin-top: 13px;
@@ -652,7 +648,7 @@ footer{
 
 
 
-/*about_scannners.html*/
+/*about_elm327.html+about_prof*/
 .main_section{
     background-color: #dce0e8;
     padding-top: 5.5rem;
@@ -662,6 +658,7 @@ footer{
     flex-direction: column;
 }
 .main_section .title{
+    text-align: center;
     margin: 0 auto;
     text-transform: uppercase;
 }
@@ -700,7 +697,7 @@ footer{
 }
 .answer li,
 .answer p{
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
 }
 .answer li:last-child{
     margin-bottom: 0;
@@ -751,6 +748,43 @@ footer{
     margin: 4rem auto;
 }
 
+/*about_prof*/
+.about-scanner{
+    display: flex;
+    justify-content: space-between;
+}
+.about-scanner-colomn1{
+    width: 40%;
+}
+.about-scanner-photo{
+    border-radius: 2px;
+    border: 1px solid #009fe3;
+    background-color: #fff;
+}
+.about-scanner-colomn1 p{
+    margin-top: 1rem;
+}
+.about-scanner-colomn1 li{
+    margin-bottom: 1rem;
+}
+.about-scanner-colomn1 .main-button{
+    text-decoration: none;
+    display: flex;
+}
+.about-scanner-colomn2{
+    width: 57%;
+}
+.about-scanner-colomn2 ul{
+    margin-bottom: 2rem;
+}
+.about-scanner-colomn2 ul li{
+    list-style: disc;
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+}
+.bold-text{
+    font-weight: 700;
+}
 
 /*shipping.html*/
 .shipping li{

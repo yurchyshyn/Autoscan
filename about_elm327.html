@@ -71,9 +71,7 @@
         <!-- Main section -->
         <section class="main_section">
             <div class="wrapper">
-                <h2 class="title">Про сканери</h2>
-                <h1 class="title-red"><strong>ELM327</strong></h1>
-
+                <h2 class="title">Про <strong>ELM327</strong> сканери</h2>
                 <h3 class="question-title">Що таке сканер <span class="elm327">ELM327</span>?</h3>
                 <div class="answer">
                     <p>Автосканер <span class="elm327">ELM327</span>  -  це універсальний OBD-2 сканер для самостійної діагностики електронних систем автомобіля та перегляду багатьох потрібних параметрів автомобіля в режимі онлайн на смартфоні, магнітолі чи комп'ютері. Схема адаптера виконана на базі мікроконтролера <span class="elm327">ELM327</span>, розробленим канадською компанією Elmelectronics.</p>
@@ -131,7 +129,7 @@
                     <p><span class="wifi">WIFI</span> сканери були розроблені спеціально для роботи з "яблучною продукцією", при тому вони працюють і з <span class="android">Android</span> і з <span class="windows">Windows</span>. Тому якщо ви власник смартфона від Apple або ж Ви хочете діагностувати авто за допомогою ноутбука, а в ньому відсутній модуль <span class="bluetooth">Bluetooth</span>, то Вам однозначно потрібна <span class="wifi">WIFI</span> версія. <span class="wifi">WIFI</span> версія трохи дорожча за <span class="bluetooth">Bluetooth</span>, але натомість Ви отримуєте вищу швидкість передачі даних.Проте є і незначний недолік, під час роботи <span class="wifi">WIFI</span> сканера мобільний інтернет буде недоступний.</p>
                     <p>А чи потрібні ще USB ELM327? Якщо використовувати для діагностики та перегляду параметрів, то краще глянути у сторону безпровідникових сканерів. Але якщо у вас Ford чи Mazda і ви плануєте вносити певні зміни в електронні блоки управління вашого авто, то однозначно потрібно брати ELM327 USB з перемикачем між HS і MS СAN шинами.</p>
                 </div>
-
+                <div id="elm327hs/mscan"></div>
                 <h3 class="question-title">Що ж дає перемикач між шинами HS CAN і MS CAN? (для Ford, Mazda)</h3>
                 <div class="answer">
                     <p>Багато моделей Ford і Mazda (приблизно з 2003-2004 року) обладнані шиною MS CAN, на додаток до звичайної шини HS CAN (яка присутня в більшості автомобілів). Але на відміну від HS CAN, MS CAN не дозволяє працювати зі стандартними <span class="elm327">ELM327</span> сканерами, тому що MS CAN є специфічним рішенням виробника і використовує не-OBD2 контакти. Однак, <span class="elm327">ELM327</span> є дуже гнучким інструментом, і невелика модифікація дозволяє реалізувати підтримку MS CAN. Звичайні сканери <span class="elm327">ELM327</span> з мікрочіпом PIC18F25K80 підтримують високошвидкісну шину HS CAN, що дозволяє працювати їм лише з частиною модулів. Для роботи з усіма модулями, що підтримують високошвидкісну HS-CAN і середньошвидкісну шину MS-CAN адаптер було допрацьовано і вмонтовано перемикач між шинами HS і MS CAN. Відповідно власники Ford i Mazda отримали можливість перегляду та коректування параметрів по всіх електронних блоках автомобіля. Найбільш пристосовані для цього програми на <span class="windows">Windows</span> це FORScan та ELMConfig.</p>
@@ -212,11 +210,11 @@
         <div class="overlay">
             <div class="modal-content">
                 <button class="modal-content-close">&times;</button>
-                <p class="modal-content-title">Допомога у виборі сканера</p>
+                <p class="modal-content-title">Замовлення автосканера</p>
                 <form action="#" name="order">
                     <input class="buyerDate" id="buyerName" type="text" required placeholder="Ім'я" maxlength="20" name="user_name">
                     <input class="buyerDate" id="buyerTel" type="number" required placeholder="Номер телефону" name="user_phone">
-                    <button type="submit">Допомогти вибрати</button>
+                    <button type="submit">Підтвердити</button>
                 </form>
             </div>
         </div>

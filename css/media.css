@@ -102,9 +102,6 @@
     .main-opportunities{
         margin-top: 2rem;
     }
-    .main-read{
-        margin-top: 4.2rem;
-    }
     .zoom,
     .catalog-goods-item-cursor{
         display: none;
@@ -198,9 +195,6 @@
 }
 @media screen and (max-width: 640px){
     .main-opportunities,
-    .main-read{
-        display: none;
-    }
     .main .wrapper{
         flex-direction: column;
         align-items: center;
@@ -266,6 +260,16 @@
         width: 98%;
         padding: 1rem;
         text-align: center;
+    }
+    .about-scanner {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-scanner-colomn1{
+        width: 92%;
+    }
+    .about-scanner-colomn2{
+        width: 92%;
     }
 @media screen and (max-width: 410px){
     .contacts-blocks-info,
