@@ -266,7 +266,6 @@ header{
     color:  #006df0;
 }
 .main-read:hover{
-    opacity: 
     border-color:#dce0e8;
     background-color: #dce0e8;
     opacity: 0.7;
@@ -357,12 +356,6 @@ header{
     position: absolute;
     right: 1rem;
     top:1rem;
-}
-.usb{
-    margin-top: 5px;
-    width: 3rem;
-    transform: rotate(-90deg);
-    right: 0.5rem;
 }
 .bmw{
     opacity: 0;
